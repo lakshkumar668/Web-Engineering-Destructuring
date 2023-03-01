@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        // an object literal
+        var foo = {bar: 'pony', baz: 3};
+        var {bar:a, baz:b} = foo;
+        console.log(a);
+        console.log(b);
+        
+        //object destructuring shorthand notation 
+        var {x,y} = {x:1,y:2};
+        console.log(x);
+        console.log(y);
+
+        //Array Destructuring
+        var [a,b,c] = [1,2,3];
+        console.log("A is : "+a+" B is : "+b+" C is : "+c);
+        var [a, ...b] = ['a','b','c'];
+        console.log("A is "+a+" B is "+b)
+    </Script>
+</body>
+</html>
